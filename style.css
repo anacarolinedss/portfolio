@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    list-style: none;
+    font-family: "Poppins", sans-serif; 
+}
+
+body {
+    overflow-x: hidden;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    position: relative;
+    z-index: 1; 
+    background-color: hsl(0, 1%, 28%);
+    padding: 10px 20px;
+    color: #fff;
+}
+
+.navbar {
+    display: flex; /* Utiliza flexbox para o layout */
+    justify-content: center; /* Centraliza os itens na barra */
+    align-items: center; /* Alinha os itens verticalmente */
+    width: 100%; /* A barra ocupa toda a largura */
+}
+
+.navbar ul {
+    list-style-type: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+ul li {
+    margin: 0 20px; /* Espaçamento entre os itens */
+}
+
+
+ul li a {
+    text-decoration: none;
+    color: #fdfdfd;
+    font-size: 35px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-weight: bold;
+    cursor: pointer; /* Indica que o item é clicável */
+    transition: color 0.3s ease; /* Transição suave de cor */
+
+}
+
+ul li a:hover {
+    color: #2ecc71; /* Cor verde quando passar o mouse */
+}
+
+/* Container para o botão e ícone */
+.button-container {
+    display: flex;
+    justify-content: center; /* Centraliza o conteúdo dentro do container */
+    align-items: center; /* Alinha verticalmente o botão e o ícone */
+    position: fixed; /* Fixar o botão no lugar, para que ele permaneça visível ao rolar a página */
+    right: 10px; /* Coloca o container à direita da página */
+    bottom: 20px; /* Ajusta a distância do fundo, se necessário */
+    z-index: 1000; /* Garante que o botão fique acima de outros elementos */
+
+}
+
+button {
+    padding: 10px 20px;
+    background-color: #8d085a;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #FF4500;
+}
+
+button + i {
+    margin-left: 10px; /* Espaço entre o botão e o ícone */
+    font-size: 1.5em; /* Ajuste o tamanho do ícone */
+    color: #FF6347; /* Cor do ícone */
+}
+
+
+/* Logo */
+.logo {
+    display: flex; /* Usando flexbox para alinhar as logos na mesma linha */
+    align-items: center; /* Alinha as logos verticalmente no centro */
+    font-size: 2em; /* Tamanho da fonte das logos */
+    color: white; /* Cor das logos */
+    padding: 30px; /* Espaçamento ao redor das logos */
+
+}
+
+.logo i {
+    margin-right: 15px; /* Espaçamento entre os ícones */
+
+}
+header {
+    display: flex;
+    justify-content: space-around;
+    max-width: 100%;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+}
+
+.cabeçalho-link a {
+    color: #fff;
+    font-size: 12px;
+}
+
+.cabeçalho-link a:hover {
+    color:  #2ecc71;
+    transition: 0.3s all;
+}
+
+.logo i {
+    height: 40px;
+    width: 40px;
+    background: transparent;
+    border: 1px solid #2ecc71;
+    color: #2ecc71;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    cursor: pointer;
+}
+
+button {
+    color: #2ecc71; /* Cor do texto: verde */
+    background: transparent; /* Fundo transparente */
+    border: solid 1px #2ecc71;  /* Borda sólida verde de 1px */
+    padding: 5px; /* Adiciona um espaçamento interno (padding) de 5px em todas as direções */
+    border-radius: 15px; /* Arredonda as bordas do elemento, criando cantos arredondados com raio de 15px */
+    font-size: 25px; /* Define o tamanho da fonte como 20px */
+    font-weight: bold; /* Texto em negrito */
+    cursor: pointer; /* Altera o cursor para "pointer" quando o usuário passar o mouse sobre o elemento */
+    width: 300px; /* Define a largura do elemento */
+
+}
+
+button:hover {
+    background-color: #2ecc71;
+    color: #fff;
+    transition: 0.5s;
+}
+
+/* Container de texto */
+.container-text {
+    padding: 130px 0 0 130px;
+
+}
+
+/* Para o container do h3 e da imagem */
+.text h3 {
+    color: #fff; /* Cor do texto */
+    font-size: 70px; /* Tamanho do texto */
+    font-weight: bold; /* Peso da fonte */
+    position: relative; /* Permite mover o h3 sem afetar os outros elementos */
+    top: -150px; /* Mover o h3 para baixo + e para cima -, ajuste o valor conforme necessário */
+    left: 980px; /*move a imagem 100 pixels para a direita*/
+   
+}
+
+/* Contêiner que envolve apenas o h3 e a imagem */
+.container h3 img {
+    display: flex; /* Alinha h3 e a imagem em linha */
+    align-items: center; /* Alinha verticalmente o texto e a imagem */
+    margin-bottom: 10px; /* Dá um pequeno espaço abaixo */
+}
+
+.container img {
+    width: 290px; /* Define a largura da imagem */
+    height: 300px; /* Mantém a proporção da imagem */
+    border-radius: 50%; /* Arredondamento das bordas */
+    border: 5px solid #5BBE42; /* Borda verde */
+    margin-left: 70px; /* Espaço entre o texto e a imagem */
+    position: relative; /* Permite controle de posição da imagem */
+    left: 1070px; /*move a imagem 100 pixels para a direita*/
+    left: 60;
+    top: -40px; /* Move a imagem para baixo */
+}
+
+.text h1 {
+    color: #fff;
+    margin-top: 300px; /* Move para baixo */
+    font-size: 45px; /* Tamanho da fonte */
+    font-weight: bold;
+    position: relative; /* Permite mover o elemento */
+    left: 900px; /* Move o título 50px para a direita */
+    top: -450px; /* Mover o h3 para baixo + e para cima -, ajuste o valor conforme necessário */
+}
+
+.text span {
+    color: #2ecc71;
+}
+
+
+.text p {
+    color: #fff; /* Cor do texto */
+    font-weight: 500; /* Peso da fonte */
+    margin-top: 30px; /* Move 30px para baixo */
+    font-size: 40px; /* Tamanho da fonte */
+    text-align: justify; /* Justifica o texto */
+    line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
+    margin-right: auto; /* Centraliza o texto na horizontal (com o foco à esquerda) */
+    width: 40%; /* Largura da caixa, ajustada para a necessidade */
+    padding: 20px; /* Adiciona espaçamento interno (dentro da caixa) */
+    border: 2px solid #6fee7a; /* Borda de 2px de cor cinza */
+    border-radius: 10px; /* Bordas arredondadas */
+    background-color: transparent; /* Retira o fundo da caixa */
+    margin-bottom: 40px; /* Espaço abaixo da caixa (entre o texto e o próximo elemento) */
+    margin: 30px auto 40px auto; /* Centraliza a caixa horizontalmente e define espaçamento acima e abaixo */
+    position: relative; /* Necessário para mover com top */
+    top: -480px; /* Mover a caixa 100px para cima */
+}
+
+
+/* Ícones de redes sociais */
+.redes-sociais{
+    margin-top: 20px;
+}
+/* Container de redes sociais */
+.redes-sociais{
+    width: 40%; /* Mesma largura do texto */
+    margin: 20px auto 0 auto; /* Centraliza horizontalmente e ajusta margens */
+    text-align: center; /* Centraliza os ícones dentro da largura */
+}
+
+.redes-sociais a i {
+    color: #2ecc71;
+    padding: 10px;
+    margin-top: 5px; /* Move 50px para */
+    font-size: 5em !important; /* Garante que o estilo seja aplicado */
+}
+
+.redes-sociais a:hover {
+    transform: scale(1.2); /* Reduzido o efeito de zoom */
+    color: #fff;
+}
+
+/* Vídeo em tela cheia */
+.estrelas {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+}
+
+.video {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1; 
+}
+
+@media screen and (max-width: 600px) {
+    .cabeçalho-link {
+        display: none; /* Esconde links em telas pequenas */
+    }
+    .text p {
+        font-size: 24px; /* Reduz o tamanho da fonte em telas pequenas */
+    }
+    .text h1 {
+        font-size: 18px;
+    }
+    button {
+        width: 100px; /* Torna o botão menor em telas pequenas */
+    }
+}
