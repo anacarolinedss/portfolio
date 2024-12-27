@@ -45,7 +45,7 @@ ul li {
 ul li a {
     text-decoration: none;
     color: #fdfdfd;
-    font-size: 35px; /* Ajuste o tamanho da fonte conforme necessário */
+    font-size: 20px; /* Ajuste o tamanho da fonte conforme necessário */
     font-weight: bold;
     cursor: pointer; /* Indica que o item é clicável */
     transition: color 0.3s ease; /* Transição suave de cor */
@@ -141,7 +141,7 @@ button {
     border: solid 1px #2ecc71;  /* Borda sólida verde de 1px */
     padding: 5px; /* Adiciona um espaçamento interno (padding) de 5px em todas as direções */
     border-radius: 15px; /* Arredonda as bordas do elemento, criando cantos arredondados com raio de 15px */
-    font-size: 25px; /* Define o tamanho da fonte como 20px */
+    font-size: 20px; /* Define o tamanho da fonte como 20px */
     font-weight: bold; /* Texto em negrito */
     cursor: pointer; /* Altera o cursor para "pointer" quando o usuário passar o mouse sobre o elemento */
     width: 300px; /* Define a largura do elemento */
@@ -163,7 +163,7 @@ button:hover {
 /* Para o container do h3 e da imagem */
 .text h3 {
     color: #fff; /* Cor do texto */
-    font-size: 70px; /* Tamanho do texto */
+    font-size: 45px; /* Tamanho do texto */
     font-weight: bold; /* Peso da fonte */
     position: relative; /* Permite mover o h3 sem afetar os outros elementos */
     top: -150px; /* Mover o h3 para baixo + e para cima -, ajuste o valor conforme necessário */
@@ -193,7 +193,7 @@ button:hover {
 .text h1 {
     color: #fff;
     margin-top: 300px; /* Move para baixo */
-    font-size: 45px; /* Tamanho da fonte */
+    font-size: 35px; /* Tamanho da fonte */
     font-weight: bold;
     position: relative; /* Permite mover o elemento */
     left: 900px; /* Move o título 50px para a direita */
@@ -209,7 +209,7 @@ button:hover {
     color: #fff; /* Cor do texto */
     font-weight: 500; /* Peso da fonte */
     margin-top: 30px; /* Move 30px para baixo */
-    font-size: 40px; /* Tamanho da fonte */
+    font-size: 30px; /* Tamanho da fonte */
     text-align: justify; /* Justifica o texto */
     line-height: 1.5; /* Ajusta o espaçamento entre as linhas */
     margin-right: auto; /* Centraliza o texto na horizontal (com o foco à esquerda) */
@@ -279,3 +279,11 @@ button:hover {
         width: 100px; /* Torna o botão menor em telas pequenas */
     }
 }
+
+hr {
+    border: none;
+    height: 2px;
+    background: linear-gradient(to right, #ff7e5f, #feb47b);
+  }
+  
+
